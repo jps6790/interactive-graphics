@@ -9,6 +9,10 @@ body{
     padding: 10px 20px;
 }
 
+h1, h3{
+    text-align: center;
+}
+
 canvas{
     border: 2px solid #C2E0F3;
     border-radius: 16px;
@@ -17,6 +21,7 @@ canvas{
 #toolbox{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 #tool-selected, #drawer, #drawer-content{
