@@ -1,0 +1,38 @@
+body{
+    background-color: #E3E3E3;
+}
+
+#container{
+    width: 80%; 
+    margin: 10px auto;
+    border: 2px solid blue;
+    padding: 10px 20px;
+}
+
+canvas{
+    border: 2px solid #C2E0F3;
+    border-radius: 16px;
+}
+
+#toolbox{
+    display: flex;
+    flex-direction: row;
+}
+
+#tool-selected, #drawer, #drawer-content{
+    border: 1px dotted black;
+}
+#drawer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tool-option{
+    margin: 10px;
+    padding: 6px;
+    background-color:#C2C2C2;
+}
+
+img{
+    display: block;
+}
