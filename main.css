@@ -1,45 +1,114 @@
 body{
-    background-color: #E3E3E3;
+    background-color: #C3FBF3;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 #container{
     width: 80%; 
     margin: 10px auto;
-    border: 2px solid blue;             /* REMOVE */
     padding: 10px 20px;
+}
+
+#selector{
+    margin: 80px auto;
 }
 
 h1, h3, h4{
     text-align: center;
 }
+h1{
+    margin: 0;
+    font-size: 42pt;
+}
+h3{
+    margin: 0;
+    font-size: 18pt;
+}
+h4{
+    margin: 18px auto;
+}
 
-canvas{
-    border: 2px solid #C2E0F3;
-    border-radius: 16px;
+p{
+    font-family: 'Open Sans', sans-serif;
 }
 
 #toolbox{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 20px auto;
 }
 
-#tool-selected, #drawer, #drawer-content{
-    border: 1px dotted black;           /* REMOVE */
+#drawing{
+    margin: 0 auto;
 }
+
+#canvas{
+    border-radius: 16px;
+}
+
+#tool-selected-desc{
+    max-width: 600px;
+}
+
 #drawer{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .tool-option{
-    margin: 10px;
-    padding: 6px;
-    background-color:#C2C2C2;
+    margin: 0 20px;
+    padding: 5px 20px;
 }
 
+#canvas, img{
+    border: 4px solid #7DA39D;
+}
 img{
     width: 100px;
     height: 100px;
     display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    transition: border-color .5s; 
+}
+img:hover{
+    border-color: #00D1FF;
+}
+
+#doc{
+    max-width: 800px;
+    margin: 10px auto;
+    border: 2px dashed black;
+    border-radius: 10px; 
+    padding: 20px;
+    background-color: white;
+    line-height: 1.4em;
+}
+
+footer p{
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px){
+    #toolbox{
+        flex-direction: column;
+    }
+
+    #tool-selected-name, #canvas, #tool-selected-desc{
+        max-width: 300px;
+    }
+    #tool-selected{
+        margin: 0 auto;
+    }
+    #tool-selected-name{
+        text-align: center;
+    }
+
+    #canvas{
+        max-height: 200px;
+    }
+
 }
