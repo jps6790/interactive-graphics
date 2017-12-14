@@ -1,6 +1,6 @@
 function speckleBrush(){
     this.name = "Speckle Brush";
-    this.desc = "Speckle Brush description...";
+    this.desc = "The Speckle Brush creates a mesmerizing splash of vibrant spots of color that compress as they expand outward, quite paradoxically. Press 'C' to clear.";
 
     this.hueVal = 0;
     

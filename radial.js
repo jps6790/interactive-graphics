@@ -1,6 +1,6 @@
 function radialPen(){
     this.name = "Radial Pen";
-    this.desc = "Radial Pen description...";
+    this.desc = "The Radial Pen is a most respectable instrument; consistent with a little flair and an excellent Venn diagram artist. Press 'C' to clear.";
 
     this.w = 0;
     this.h = 0;

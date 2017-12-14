@@ -1,6 +1,6 @@
 function lightningPen(){
     this.name = "Lightning Pen";
-    this.desc = "Lightning Pen description...";
+    this.desc = "The Lightning Pen is a vicious little bundle of electrifying lines, set on a timer for spontaneous color changes. Press 'C' to clear.";
 
     this.xOff;
     this.yOff;
@@ -16,9 +16,9 @@ function lightningPen(){
         background(0,1);
         colorMode(RGB,255,255,255,100);
         if((timer%120)==0){
-            this.red+=30;
+            this.red+=40;
             this.green+=80;
-            this.blue+=120;
+            this.blue+=160;
         }
         this.red=this.red%255;
         this.green=this.green%255;
