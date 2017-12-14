@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Open+Sans" rel="stylesheet">
+    <title>Documentation</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Project 4:</h1>
+        <h3>Interactive Graphics on the Web</h3>
+        <div id="toolbox">
+            <div class="tool-option">
+                <a href="lightning-pen.html"><img src="media/lightning.png" alt="to lightning pen"></a>
+            </div>
+            <div class="tool-option">
+                <a href="radial-pen.html"><img src="media/radial.png" alt="to radial pen"></a>
+            </div>
+            <div class="tool-option">
+                <a href="speckle-brush.html"><img src="media/speckle.png" alt="to speckle brush"></a>
+            </div>
+        </div>
+        <div id="doc">
+            <p>Hello, and welcome to my humble exploration of canvas-based drawing on the web! If you haven't yet checked out my simple yet amusing applications, simply click on the images above.</p>
+            <p>This site was primarily created to test canvas functionality in a real web environment, using the <a href="https://p5js.org/">p5.js library</a> for efficient rendering and user interaction. I faced some early challenges regarding p5's draw() function, as it required values from global variables that had not yet been initialized by the time draw() was called. My solution was to link draw() to a boolean that became true only once the window.onload event had occurred. I also attempted to pass information about each tool into the document via JavaScript, but I found that presenting one application while retrieving and displaying data on the others was particularly challenging, so I resolved to simply passing in the name and description of the currently selected tool. On another note, I thought it might be a good idea to reinforce clicking on a tool's thumbnail by implementing a simple CSS color transition for its hover state.</p>
+            <p><a href="index.html">Home</a></p>
+        </div>
+    </div>
+    <footer>
+        <p><small>&copy;2017 Jordan P. Sullivan</small></p>
+    </footer>
+</body>
+</html>
